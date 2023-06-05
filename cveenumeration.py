@@ -17,7 +17,7 @@ def enumerate_cve_nist(platform, output_file):
                 file.write(f"CVE ID: {cve_id}\n")
                 file.write(f"Description: {description}\n\n")
         
-        print(f"CVEs for {platform} enumerated successfully. Output written to {output_file}")
+        print(f"CVEs for {platform} completed successfully. Your CVE report was sent to {output_file}")
     else:
         print(f"Error: {response.status_code} - {response.text}")
 
